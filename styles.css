@@ -98,10 +98,11 @@ img[src$=".svg"] {
 
 input {
     width: 600px;
-    height: 20px;
-    border-radius: 10px;
+    height: 30px;
+    border-radius: 15px;
     margin-left: 10px;
-    background-color: var(--off-white)
+    background-color: var(--off-white);
+    border: none;
 }
 
 .nav-right {
@@ -203,12 +204,14 @@ button {
 }
 
 .tab {
+    /* this is a hack i found online to truncate multiple lines with ellipsis, proceed with caution */
     overflow: hidden;
     display: -webkit-box;
     -webkit-line-clamp: 4;
     /* number of lines to show */
     line-clamp: 4;
     -webkit-box-orient: vertical;
+    /* end hack */
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 10px;
