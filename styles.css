@@ -3,14 +3,19 @@
     src: url(/assets/Lunasima-Regular.ttf);
 }
 
+:root {
+    --neat-orange: rgb(243, 119, 72);
+    --awesome-yellow: rgb(236, 234, 11);
+    --off-white: rgb(229, 240, 242);
+}
+
 * {
     margin: 0;
     padding: 0;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
-    padding: 10px;
     font-family: "Lunasima", sans-serif;
 }
 
@@ -21,21 +26,25 @@ li {
 img[src$=".svg"] {
     height: 25px;
     width: 25px;
+    fill: white;
 }
+
+
 
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 125px 1fr;
+    grid-template-rows: 165px 1fr;
 }
 
 .sidebar {
-    background-color: lightblue;
+    background-color: var(--neat-orange);
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
     gap: 30px;
     font-weight: bold;
+    padding: 20px;
 }
 
 .logo {
@@ -63,11 +72,11 @@ img[src$=".svg"] {
 }
 
 .header {
-    background-color: lightcoral;
     display: grid;
     grid-template-rows: 1.5fr 2fr;
     padding-left: 50px;
     padding-right: 50px;
+    padding-top: 10px;
 }
 
 .header-top, .header-bottom {
@@ -84,8 +93,10 @@ img[src$=".svg"] {
 
 input {
     width: 600px;
+    height: 20px;
     border-radius: 10px;
     margin-left: 10px;
+    background-color: var(--off-white)
 }
 
 .nav-right {
@@ -119,8 +130,7 @@ input {
 }
 
 button {
-    color: white;
-    background-color: blue;
+    background-color: var(--neat-orange);
     width: 100px;
     height: 30px;
     border-radius: 20px;
@@ -128,12 +138,14 @@ button {
 }
 
 .main-content {
-    background-color: lightyellow;
+    background-color: var(--off-white);
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 369px 1fr;
     gap: 20px;
     padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
 }
 
 .absolute {
@@ -154,9 +166,14 @@ button {
 }
 
 .card {
-    background-color: white;
-    height: 184px;
+    background: linear-gradient(
+        to right,
+        var(--awesome-yellow) 3%,
+        white 3%
+    );
+    height: 182px;
     padding: 20px;
+    padding-left: 30px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -184,7 +201,7 @@ button {
    margin-right: 20px;
    margin-top: 10px;
    margin-bottom: 10px;
-   height: 83px;
+   height: 82px;
 }
 
 .tab:first-child {
