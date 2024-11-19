@@ -38,7 +38,7 @@ img[src$=".svg"] {
     border: 1px solid red;
 }
 
-.sidebar-container-top, .sidebar-container-bottom {
+.sidebar > ul {
     display: grid;
     grid-template-columns: 1fr 4fr;
 }
