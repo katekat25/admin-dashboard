@@ -10,6 +10,7 @@
 
 body {
     height: 50vh;
+    padding: 10px;
     font-family: "Lunasima", sans-serif;
 }
 
@@ -34,10 +35,17 @@ img[src$=".svg"] {
     display: flex;
     flex-direction: column;
     border: 1px solid green;
+    gap: 30px;
+    font-weight: bold;
 }
 
 .logo {
     display: flex;
+}
+
+.logo-icon > img {
+    height: 40px;
+    width: 40px;
 }
 
 .sidebar > div, ul {
@@ -46,7 +54,17 @@ img[src$=".svg"] {
 
 .sidebar > ul {
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: 40px 3fr;
+}
+
+.logo-icon, .sidebar-icon {
+    align-self: center;
+    justify-self: center;
+}
+
+.logo-text, .sidebar-text {
+    align-self: center;
+    padding-left: 10px;
 }
 
 .header {
