@@ -4,13 +4,17 @@
 }
 
 body {
-    height: 100vh;
+    height: 50vh;
+}
+
+li {
+    list-style-type: none;
 }
 
 .container {
     display: grid;
     grid-template-columns: 1fr 3fr;
-    grid-template-rows: 1fr 5fr;
+    grid-template-rows: 1fr 4fr;
 }
 
 .sidebar {
@@ -40,6 +44,22 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.nav-icon img, .trending-icon img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.profile-icon img {
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.nav-right, .profile-left {
+    display: flex;
 }
 
 .main-content {
