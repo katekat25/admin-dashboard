@@ -111,7 +111,7 @@ input {
     background-color: lightyellow;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 300px 1fr;
+    grid-template-rows: 369px 1fr;
     gap: 20px;
     padding-top: 20px;
 }
@@ -152,14 +152,14 @@ input {
 .tab {
     overflow: hidden;
     display: -webkit-box;
-    -webkit-line-clamp: 3; /* number of lines to show */
-            line-clamp: 3; 
+    -webkit-line-clamp: 4; /* number of lines to show */
+            line-clamp: 4; 
     -webkit-box-orient: vertical;
    margin-left: 20px;
    margin-right: 20px;
    margin-top: 10px;
    margin-bottom: 10px;
-   height: 60px;
+   height: 83px;
 }
 
 .tab:first-child {
