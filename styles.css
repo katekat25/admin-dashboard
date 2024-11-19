@@ -10,7 +10,6 @@
 }
 
 body {
-    height: 50vh;
     padding: 10px;
     font-family: "Lunasima", sans-serif;
 }
@@ -112,7 +111,7 @@ input {
     background-color: lightyellow;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 300px 1fr;
     gap: 20px;
     padding-top: 20px;
 }
@@ -146,14 +145,29 @@ input {
 .announcements-container {
     display: grid;
     grid-row: 1fr 1fr 1fr;
+    background-color: white;
+    margin-top: 35px;
 }
 
 .tab {
     overflow: hidden;
-   display: -webkit-box;
-   -webkit-line-clamp: 4; /* number of lines to show */
-           line-clamp: 4; 
-   -webkit-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; /* number of lines to show */
+            line-clamp: 3; 
+    -webkit-box-orient: vertical;
+   margin-left: 20px;
+   margin-right: 20px;
+   margin-top: 10px;
+   margin-bottom: 10px;
+   height: 60px;
+}
+
+.tab:first-child {
+    margin-top: 20px;
+}
+
+.tab:last-child {
+    margin-bottom: 20px;
 }
 
 .trending-container {
@@ -161,8 +175,7 @@ input {
     grid-template-columns: 50px 2fr;
 }
 
-.card-container,
-.announcements-container, 
+.card-container, 
 .trending-container {
     padding-top: 2rem;
 }
