@@ -135,13 +135,17 @@ input {
 
 .card {
     background-color: white;
+    height: 184px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .card-icon-container {
     display: flex;
     justify-content: right;
 }
-
 .announcements-container {
     display: grid;
     grid-row: 1fr 1fr 1fr;
