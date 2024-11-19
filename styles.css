@@ -6,6 +6,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: 1px solid red;
 }
 
 body {
@@ -26,7 +27,7 @@ img[src$=".svg"] {
 .container {
     display: grid;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 4fr;
+    grid-template-rows: 150px 1fr;
 }
 
 .sidebar {
@@ -71,6 +72,8 @@ img[src$=".svg"] {
     background-color: lightcoral;
     display: grid;
     grid-template-rows: 1.5fr 2fr;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .header-top, .header-bottom {
@@ -91,8 +94,8 @@ img[src$=".svg"] {
 }
 
 .profile-icon img {
-    height: 75px;
-    width: 75px;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
 }
 
@@ -105,13 +108,30 @@ img[src$=".svg"] {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    gap: 20px;
+    padding-top: 20px;
+}
+
+.absolute {
+    position: absolute;
+    font-weight: bold;
 }
 
 .projects {
     grid-row: 1/3;
+    padding-left: 20px;
+}
+
+.card-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.card {
+    border: 1px solid red;
+    background-color: white;
 }
 
 .card-icon-container {
@@ -119,7 +139,19 @@ img[src$=".svg"] {
     justify-content: right;
 }
 
+.announcements-container {
+    display: grid;
+    grid-row: 1fr 1fr 1fr;
+}
+
 .trending-container {
     display: grid;
     grid-template-columns: 50px 2fr;
+}
+
+.card-container,
+.announcements-container, 
+.trending-container {
+    padding-top: 2rem;
+    border: 1px solid red;
 }
