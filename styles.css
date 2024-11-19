@@ -146,7 +146,7 @@ input {
     display: grid;
     grid-row: 1fr 1fr 1fr;
     background-color: white;
-    margin-top: 35px;
+    margin-top: 2rem;
 }
 
 .tab {
@@ -173,9 +173,12 @@ input {
 .trending-container {
     display: grid;
     grid-template-columns: 50px 2fr;
+    background-color: white;
+    margin-top: 2rem;
+    padding: 20px;
+    gap: 20px;
 }
 
-.card-container, 
-.trending-container {
+.card-container {
     padding-top: 2rem;
 }
