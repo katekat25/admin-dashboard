@@ -1,1 +1,3 @@
 # admin-dashboard
+
+This was another fun project! I showed off lots of intermediate CSS (box shadows, z-index, variables, various selectors, grid, importing fonts, gradients, positioning) and HTML (inputs, SVGs). I wanted to make the sidebar a fixed element but I'd already set the grid layout hours ago, so I will attempt similar in a future project instead! This project also cameos a couple of my friends ^_^. Thanks for checking it out!
