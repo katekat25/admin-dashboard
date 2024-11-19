@@ -81,6 +81,17 @@ img[src$=".svg"] {
     align-items: center;
 }
 
+
+input {
+    width: 600px;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.nav-right {
+    gap: 10px;
+}
+
 .nav-icon img, .trending-icon img {
     height: 50px;
     width: 50px;
@@ -100,11 +111,6 @@ img[src$=".svg"] {
 
 .nav-right, .profile-left {
     display: flex;
-}
-
-input {
-    width: 600px;
-    border-radius: 10px;
 }
 
 .main-content {
