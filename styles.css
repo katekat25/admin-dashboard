@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Molengo";
-    src: url(/assets/Molengo-Regular.ttf);
+    font-family: "Lunasima";
+    src: url(/assets/Lunasima-Regular.ttf);
 }
 
 * {
@@ -10,7 +10,7 @@
 
 body {
     height: 50vh;
-    font-family: "Molengo";
+    font-family: "Lunasima", sans-serif;
 }
 
 li {
