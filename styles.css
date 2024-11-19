@@ -113,6 +113,20 @@ input {
     display: flex;
 }
 
+.profile-right {
+    display: flex;
+    gap: 20px;
+}
+
+button {
+    color: white;
+    background-color: blue;
+    width: 100px;
+    height: 30px;
+    border-radius: 20px;
+    border: none;
+}
+
 .main-content {
     background-color: lightyellow;
     display: grid;
