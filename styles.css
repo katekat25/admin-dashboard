@@ -4,7 +4,7 @@
 }
 
 :root {
-    --neat-orange: rgb(243, 119, 72);
+    --super-blue: rgb(41, 115, 115);
     --awesome-yellow: rgb(236, 234, 11);
     --off-white: rgb(229, 240, 242);
     --shadow: rgb(187, 195, 196);
@@ -27,7 +27,10 @@ li {
 img[src$=".svg"] {
     height: 25px;
     width: 25px;
-    fill: white;
+    }
+
+.sidebar img[src$=".svg"] {
+    filter: invert(100%) sepia(10%) saturate(5288%) hue-rotate(305deg) brightness(124%) contrast(100%);
 }
 
 .container {
@@ -37,13 +40,14 @@ img[src$=".svg"] {
 }
 
 .sidebar {
-    background-color: var(--neat-orange);
+    background-color: var(--super-blue);
     grid-row: 1 / 3;
     display: flex;
     flex-direction: column;
     gap: 30px;
     font-weight: bold;
     padding: 20px;
+    color: white;
 }
 
 .logo {
@@ -138,12 +142,13 @@ input {
 }
 
 button {
-    background-color: var(--neat-orange);
+    background-color: var(--super-blue);
     width: 100px;
     height: 30px;
     border-radius: 20px;
     border: none;
     font-weight: bold;
+    color: white;
 }
 
 .main-content {
@@ -192,6 +197,7 @@ button {
 .card-icon-container {
     display: flex;
     justify-content: right;
+    gap: 10px;
 }
 
 .announcements-container {
