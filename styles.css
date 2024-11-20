@@ -155,7 +155,7 @@ button {
     background-color: var(--off-white);
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 369px 1fr;
+    grid-template-rows: 1fr 1fr;
     gap: 20px;
     padding-top: 20px;
     padding-right: 20px;
@@ -184,7 +184,6 @@ button {
         to right,
         var(--awesome-yellow) 3%,
         white 3%);
-    height: 182px;
     padding: 20px;
     padding-left: 30px;
     display: flex;
@@ -214,7 +213,6 @@ button {
     margin-right: 20px;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 82px;
 }
 
 .tab:first-child {
